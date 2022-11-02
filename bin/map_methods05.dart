@@ -4,9 +4,12 @@ the key in it is last name,
 change it to surname
 */
 
-void main() {}
+void main() {
+  print(func({'name' : 'john', 'last_name' : 'kerry'}));
+}
 
 Map func(Map data) {
+  data[1]='sure_name';
   //your code here
 
   return data;
