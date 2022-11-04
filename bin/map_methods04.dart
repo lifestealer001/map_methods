@@ -8,7 +8,10 @@ void main() {
 }
 
 Map func(Map data) {
-  data[3]='there@';
+  String p=data[3];
+  String k=p+'@';
+  Map data[3]=k;
+
   //your code here
 
   return data;
