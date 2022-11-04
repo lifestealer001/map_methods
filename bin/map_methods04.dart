@@ -8,9 +8,12 @@ void main() {
 }
 
 Map func(Map data) {
-  String p=data[3];
-  String k=p+'@';
-  Map data[3]=k;
+String s=data[3];
+for(int i=0;i<s.length;i++){
+  if(s[i]=='@'){
+    return data;
+  }
+}data[3]=data[3]+'@';
 
   //your code here
 
